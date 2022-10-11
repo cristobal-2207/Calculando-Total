@@ -12,17 +12,17 @@
     <div class="galeria-cards">
       <div class="galeria-cards-details">
         <img class="margin" src="/assets/img/foto-1.jpg" alt="Imgen de un perrito">
-        <input class="margin" value="Cantidad">
-        <input class="margin" value="Color">
-        <p class="margin">Precio: $30.000</p>
-        <input class="margin" type="button" value="Calcular Total">
+        <input class="margin cantidad" placeholder="Escriba cantidad que desea" value="">
+        <p class="margin color">Escoja color: <span class="circle-span"><input type="color" id="colorInput" value="#757575" placeholder="Escriba color favorito"></span></p>
+        <p class="margin precio">Precio: $30000</p>
+        <button id="btn-calcular" onclick="btnOnClick()">Calcular Total</button>
       </div>
     </div>
     <div class="galeria-cards">
       <div class="galeria-cards-details">
-        <p>Total: $<span>__</span></p>
-        <p>Cantidad: <span>__</span></p>
-        <p>Color: <span>__</span></p>
+        <p class="margin">Total: $<span class="total-calculado">0</span></p>
+        <p class="margin">Cantidad: <span><input type="text" id="cantidadInput" min="1" value="" placeholder="Indique cuantos desea"></span></p>
+        <p class="margin">Color: <span class="circle-span"><input type="color" value="#757575"></span></p>
       </div>
     </div>
   </section>
